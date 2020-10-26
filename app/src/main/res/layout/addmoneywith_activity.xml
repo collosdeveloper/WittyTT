@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:textSize="24sp"
+        android:text="@string/select_add_money_type"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.task.ui.base.custom.PaymentTypeButton
+        android:id="@+id/bankCardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:paymenttype_button_img="@drawable/ic_baseline_credit_card_24"
+        app:paymenttype_button_title="@string/debit_or_credit_card"
+        app:paymenttype_button_topseparator_enable="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>

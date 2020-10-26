@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Witty</string>
+
+    <string name="no_internet">Please check your internet connection</string>
+    <string name="network_error">Network error, could get data, please try again!</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Not a valid username password</string>
+    <string name="invalid_username_and_password">please check your username and password</string>
+    <string name="empty_data_error">Can\'t find data in storage</string>
+
+    <string name="add_money_with">Add money with</string>
+    <string name="select_add_money_type">Select how to add money</string>
+    <string name="debit_or_credit_card">Debit or credit card</string>
+    <string name="title">Title</string>
+
+    <string name="card_details">Card Details</string>
+    <string name="enter_card_details">Enter card details</string>
+    <string name="card_details_activity_subtitle">This card must be in your name</string>
+    <string name="card_number_empty_error">Pleas enter full details</string>
+    <string name="card_date_error">Enter correct date</string>
+    <string name="card_number_error">Please enter a valid card number</string>
+    <string name="continueText">Continue</string>
+    <string name="bt_card_number_hint">16 digit card number</string>
+    <string name="bt_card_number_invalid">Please enter a valid card number</string>
+    <string name="bt_expiration_hint">MM/YY</string>
+    <string name="bt_expiration_invalid">Enter correct date</string>
+    <string name="bt_cvv_hint">CVV</string>
+    <string name="bt_cvv_invalid">Please enter full details</string>
+
+    <string name="amount">Amount</string>
+    <string name="how_match_want_add">How match do you want to \n add?</string>
+    <string name="GBP">GBP</string>
+    <string name="edt_amount_hint">00.00</string>
+    <string name="change">Change</string>
+    <string name="add_money">Add money</string>
+    <string name="visa_card_formatter">VISA *%s</string>
+
+    <string name="threeds_verification">3DS Verification</string>
+</resources>

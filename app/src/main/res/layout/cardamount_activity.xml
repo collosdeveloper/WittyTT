@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:text="@string/how_match_want_add"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGBP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16x"
+        android:text="@string/GBP"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <com.task.ui.base.custom.CurrencyEditText
+        android:id="@+id/edtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edt_amount_hint"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <ImageView
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/space_16x"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="@dimen/space_16x"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/edtAmount" />
+
+    <TextView
+        android:id="@+id/tvAddMoneyWithTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16x"
+        android:text="@string/add_money_with"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/separator"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <ImageView
+        android:id="@+id/ivCardType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tvAddMoneyWithTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddMoneyWithTitle"
+        app:srcCompat="@drawable/ic_baseline_credit_card_24" />
+
+    <TextView
+        android:id="@+id/tvBankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_16x"
+        android:layout_marginTop="8dp"
+        android:text="STARLING BANK"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/ivCardType"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddMoneyWithTitle" />
+
+    <TextView
+        android:id="@+id/tvCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_16x"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@+id/ivCardType"
+        app:layout_constraintTop_toBottomOf="@+id/tvBankName"
+        tools:text="VISA *0000" />
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/space_16x"
+        android:text="@string/change"
+        android:theme="@style/BlackBtnStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddMoneyWithTitle" />
+
+    <ImageView
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/space_16x"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/space_16x"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/btnChange" />
+
+    <com.task.ui.base.custom.MoveUpLayout
+        android:id="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnAddMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_16x"
+            android:text="@string/add_money"
+            android:theme="@style/BlackBtnStyle" />
+    </com.task.ui.base.custom.MoveUpLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
